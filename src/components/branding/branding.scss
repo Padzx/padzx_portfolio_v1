@@ -1,0 +1,84 @@
+@import "../../index.scss";
+
+$color-1: rgb(46, 40, 75);
+$color-2: rgb(24, 24, 24);
+
+.services {
+    background: radial-gradient(circle farthest-side, $color-1, $color-2);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .textContainer {
+        flex: 1;
+        align-self: flex-end;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        p {
+            font-weight: 200;
+            font-size: 20px;
+            color: rgb(134, 133, 133);
+            text-align: right;
+
+            @include mobile {
+                font-size: 16px;
+            }
+        }
+
+        hr {
+            width: 300px;
+            border: none;
+            border-top: 0.5px solid rgb(134, 133, 133);
+
+            @include mobile {
+                width: 150px;
+            }
+        }
+    }
+
+    .titleContainer {
+        flex: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .title {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: white;
+
+            @include mobile {
+                flex-direction: column;
+                text-align: center;
+                gap: 20px;
+            }
+
+            img {
+                width: 300px;
+                height: 100px;
+                border-radius: 50px;
+                object-fit: cover;
+            }
+
+            h1 {
+                font-size: 60px;
+                font-weight: 100;
+
+                @include mobile {
+                    font-size: 50px;
+                }
+            }
+
+            .text-purple {
+                background: linear-gradient(to right, #2e284b, #7f00b2);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                font-weight: 200;
+            }
+        }
+    }
+}

@@ -1,0 +1,50 @@
+@import "../../index.scss";
+
+
+.navbar{
+
+
+    $color-1: rgb(46, 40, 75);
+    $color-2: rgb(24, 24, 24);
+
+    width: 100%;
+    background: radial-gradient(circle farthest-side, $color-1, $color-2);
+    padding: 1rem;
+
+
+    .icons {
+        display: flex;
+        color: rgb(147, 55, 223);
+        font-size: 1.5rem;
+        justify-content: flex-end;
+        gap: 30px;
+        cursor: pointer;
+
+        @include mobile{
+
+            display: flex;
+            
+            
+        }
+    
+        
+        @keyframes rotateIcon {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    
+        
+        > * {
+            transition: transform 0.3s ease, color 0.3s ease; 
+            &:hover {
+                animation: rotateIcon 1s linear infinite; 
+                color: rgb(134, 133, 133);
+            }
+        }
+    }
+
+}

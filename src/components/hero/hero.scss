@@ -1,0 +1,103 @@
+@import '../../index.scss';
+
+.hero {
+    $color-1: rgb(46, 40, 75);
+    $color-2: rgb(24, 24, 24);
+
+    height: calc(113% - 113px);
+    background: radial-gradient(circle farthest-side, $color-1, $color-2);
+    position: relative;
+
+    .wrapper {
+        max-width: 1366px;
+        height: 100%;
+        margin: auto;
+
+        @include mobile {
+            width: 100%;
+            text-align: center;
+            align-items: center;
+            margin-left: -190px;
+        }
+
+        .textContainer {
+            display: flex;
+            height: 100%;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 200px;
+            top: 190px;
+
+            @include mobile {
+                height: 50%;
+                width: 100%;
+            }
+
+            h1 {
+                font-size: 5.5rem;
+                color: #9337df;
+
+                @include mobile {
+                    font-size: 2.5rem;
+                }
+            }
+
+            h2 {
+                font-size: 1.3rem;
+                letter-spacing: 0.2rem;
+                color: rgb(134, 133, 133);
+
+                @include mobile {
+                    font-size: 0.9rem;
+                }
+            }
+
+            h3 {
+                font-size: 4.1rem;
+                color: #531f7e;
+
+                @include mobile {
+                    width: 100%;
+                    font-size: 2.5rem;
+                }
+            }
+        }
+
+        .down {
+            color: rgb(134, 133, 133);
+            font-size: 2rem;
+            position: absolute;
+            bottom: 10vh;
+            left: 50%;
+            transform: translateX(-50%);
+
+            @include mobile {
+                width: 100%;
+                top: 380px;
+            }
+        }
+
+        .buttons {
+            button {
+                padding: 10px;
+                border: 1px solid rgb(134, 133, 133);
+                border-radius: 10px;
+                background-color: transparent;
+                color: rgb(134, 133, 133);
+                margin-right: 20px;
+                cursor: pointer;
+                transition: all 0.3s ease;
+
+                &:hover {
+                    background-color: rgb(134, 133, 133);
+                    transform: scale(1.05);
+                    color: rgb(60, 60, 60);
+                }
+
+                &:active {
+                    transform: scale(0.95);
+                }
+            }
+        }
+    }
+}

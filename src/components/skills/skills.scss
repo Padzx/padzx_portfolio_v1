@@ -1,0 +1,88 @@
+@import "../../index.scss";
+
+.skills {
+    $color-1: rgb(46, 40, 75);
+    $color-2: rgb(24, 24, 24);
+
+    height: 100%;
+    display: flex;
+    position: relative;
+    background: radial-gradient(circle farthest-side, $color-1, $color-2);
+    justify-content: center;
+    height: 100%;
+    overflow: hidden;
+
+
+}
+
+.skills .wrapper {
+    max-width: 1366px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+
+
+
+
+}
+
+.skill-frontend {
+    margin-top: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 90px;
+    position: relative;
+    left: 100%;
+    border-radius: 10px;
+    border: 1px solid rgb(134, 133, 133);
+    margin-bottom: 20px;
+
+}
+
+.skill-frontend svg {
+    font-size: 4rem;
+    color: #9337df;
+
+
+
+}
+
+.skill-devops {
+    margin-top: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 90px;
+    height: 90px;
+    left: -3%;
+    border-radius: 10px;
+    border: 1px solid rgb(134, 133, 133);
+    margin-bottom: 20px;
+}
+
+.skill-devops svg {
+    font-size: 4rem;
+    color: #9337df;
+}
+
+.skill-others {
+    margin-top: 365px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 90px;
+    height: 90px;
+    left: -106%;
+    border-radius: 10px;
+    border: 1px solid rgb(134, 133, 133);
+    margin-bottom: 20px;
+}
+
+.skill-others svg {
+    font-size: 4rem;
+    color: #9337df;
+}
