@@ -8,6 +8,7 @@
   justify-content: center;
   background-color: white;
   color: black;
+  
 
   @include mobile {
 
@@ -22,7 +23,8 @@
     bottom: 0;
     width: 300px;
     background: rgba(24, 24, 24, 0.7);
-    backdrop-filter: blur(8px); 
+    backdrop-filter: blur(8px);
+    position: fixed;
 
     @include mobile{
 

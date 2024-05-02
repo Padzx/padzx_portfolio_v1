@@ -4,6 +4,8 @@ import './index.scss';
 import Redirect from './untils/pageLink'; 
 import Home from './pages/home';
 
+
+
 export default function App() {
   return (
     <Router>
