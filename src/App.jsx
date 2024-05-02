@@ -1,18 +1,17 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './index.scss';
-import Redirect from './utils/pageLink'; 
-import Home from './pages/home';
-
-
+import Hero from './components/hero/hero';
+import Branding from './components/branding/branding';
 
 export default function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Redirect to="/home" />} /> 
-        <Route path="/home" element={<Home />} />
-      </Routes>
-    </Router>
+    <div>
+      <section>    
+        <Hero />
+      </section>
+      <section>
+        <Branding />
+      </section>
+    </div>
   );
 }

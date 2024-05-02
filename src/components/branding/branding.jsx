@@ -3,7 +3,7 @@
 import { useRef } from "react";
 import "./branding.scss";
 
-const Brading = () => {
+const Branding = () => {
   const ref = useRef();
 
   return (
@@ -34,4 +34,4 @@ const Brading = () => {
   );
 };
 
-export default Brading;
+export default Branding;

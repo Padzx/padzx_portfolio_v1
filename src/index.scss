@@ -13,7 +13,12 @@ html{
     }
     
     body{
-    font-family: 'Sora', sans-serif;
+        $color-1: rgb(46, 40, 75);
+        $color-2: rgb(24, 24, 24);
+        
+        height: calc(113% - 113px);
+        background: radial-gradient(circle farthest-side, $color-1, $color-2);
+        font-family: 'Sora', sans-serif;
     
     
 }
