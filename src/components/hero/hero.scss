@@ -4,7 +4,7 @@
     $color-1: rgb(46, 40, 75);
     $color-2: rgb(24, 24, 24);
 
-    height: calc(113% - 113px);
+    height: 100%;
     background: radial-gradient(circle farthest-side, $color-1, $color-2);
     position: relative;
 
