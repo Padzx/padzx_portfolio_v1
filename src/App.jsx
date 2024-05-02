@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './index.scss';
-import Redirect from './untils/pageLink'; 
+import Redirect from './utils/pageLink'; 
 import Home from './pages/home';
 
 
