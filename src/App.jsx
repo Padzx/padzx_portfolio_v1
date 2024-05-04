@@ -3,6 +3,7 @@ import './index.scss';
 import Hero from './components/hero/hero';
 import Branding from './components/branding/branding';
 import Navbar from './components/navbar/navbar';
+import Projects from './components/projects/projects';
 
 export default function App() {
   return (
@@ -13,6 +14,9 @@ export default function App() {
       </section>
       <section>
         <Branding />
+      </section>
+      <section>
+        <Projects />
       </section>
     </div>
   );
