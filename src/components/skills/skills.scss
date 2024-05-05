@@ -8,113 +8,29 @@
     height: 100%;
     width: 100%;
     display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
     position: relative;
 
+    .wrapper{
+
+        display: flex;
+
+
     .titleContainer{
-        
 
-        color: #9337df;
-        font-size: 1.5rem;
-        position: absolute;
-        left: 37%;
-        top: 5%;
+        h2{
 
-
-
-        @include mobile{
-
-            font-size: 1rem;
-            top: 2%;
-            left: 32%;
+            font-size: 50px;
+            color: #9337df;
+            letter-spacing: 1px;
         }
-
+    }
 
     }
     
 
-    .wrapper {
 
-        display: flex;
-        color: #9337df;
-        height: 550px;
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-        flex-direction: row;
-        position: relative;
-
-        @include mobile{
-
-            justify-content: space-between;
-        }
-
-        .tech-icons-devops-2 {
-            font-size: 4.5rem;
-            margin: 15px;
-            padding: 10px;
-            opacity: 0.93;
-            position: relative;
-            top: 35%;
-            left: -255%;
-            border: 1.7px solid rgba(200, 137, 230, 0.637);
-            box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.13) !important;
-            border-radius: 10px;
-            display: flex;
-        
-            @include mobile {
-                font-size: 1.5rem;
-                left: -295%;
-            }
-        }
-        
-
-
-        .tech-icons-devops {
-            font-size: 4.5rem;
-            margin: 15px;
-            padding: 10px;
-            opacity: 0.93;
-            position: relative;
-            top: 10%;
-            left: -65%;
-            border: 1.7px solid rgba(200, 137, 230, 0.637);
-            box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.151) !important;
-            border-radius: 10px;
-            display: flex;
-
-            @include mobile{
-
-                font-size: 1.5rem;
-                left: -83%;
-                
-            }
-        
-        }
-        
-
-        .tech-icons-frontend {
-            font-size: 4.5rem;
-            margin: 15px;
-            padding: 10px;
-            opacity: 0.93;
-            position: relative;
-            top: -20%;
-            left: 30%;
-            border: 1.7px solid rgba(200, 137, 230, 0.637);
-            box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.123) !important;
-            border-radius: 10px;
-            display: flex;
-            
-
-
-            @include mobile{
-
-                font-size: 1.5rem;
-                left: 0%;
-                
-                
-            }
-        }
-    }
 }
 

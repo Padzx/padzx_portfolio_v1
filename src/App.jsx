@@ -5,6 +5,7 @@ import Branding from './components/branding/branding';
 import Navbar from './components/navbar/navbar';
 import Projects from './components/projects/projects';
 import Aboutme from './components/aboutme/aboutme';
+import Skills from './components/skills/skills';
 
 export default function App() {
   return (
@@ -18,6 +19,9 @@ export default function App() {
       </section>
       <section>
         <Aboutme />
+      </section>
+      <section>
+        <Skills />
       </section>
       <section>
         <Projects />

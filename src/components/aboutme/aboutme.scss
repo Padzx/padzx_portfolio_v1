@@ -6,7 +6,7 @@
     $color-2: rgb(24, 24, 24);
 
     background: radial-gradient(circle farthest-side, $color-1, $color-2);
-    height: 100vh;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -44,6 +44,7 @@
         .textContainer {
 
             padding-top: 45px;
+            margin: 10px;
             color: rgb(134, 133, 133);
             font-size: 20px;
             text-align: justify;
