@@ -41,8 +41,11 @@
             display: flex;
             position: relative;
 
+
+
             .skills-stack {
                 position: relative;
+                
                 top: 30px;
                 display: flex;
                 justify-content: space-around;
@@ -54,9 +57,7 @@
                     flex-wrap: nowrap;
                     justify-content: center;
                     gap: 10px;
-                    
                 }
-                
 
                 .grid {
                     font-size: 2rem;
@@ -77,9 +78,7 @@
                         flex: none;
                         min-height: 80px;
                         min-width: 65px;
-                        
                     }
-
                 }
 
                 .grid:hover {
@@ -91,9 +90,96 @@
                     font-size: 4.5rem;
                     color: #9337df;
 
-                    @include mobile{
+                    @include mobile {
                         font-size: 2rem;
                     }
+                }
+
+                    .docker {
+                    
+                    position: absolute;
+                    left: 0px;
+                    top: 140px;
+                    order: 1;
+                    flex-basis: 20%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    @include mobile{
+
+                        min-height: 80px;
+                        min-width: 65px;
+                    }
+
+                }
+
+                .k8s{
+
+                    position: absolute;
+                    left: 135px;
+                    top: 140px;
+                    order: 1;
+                    flex-basis: 20%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    @include mobile{
+
+                        min-height: 80px;
+                        min-width: 65px;
+                        left: 83px;
+                    }
+
+
+                }
+
+                .aws{
+
+                    position: absolute;
+                    left: 270px;
+                    top: 140px;
+                    order: 1;
+                    flex-basis: 20%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    @include mobile{
+
+                        min-height: 80px;
+                        min-width: 65px;
+                        left: 83px;
+                    }   
+                        @include mobile{
+
+                        min-height: 80px;
+                        min-width: 65px;
+                        left: 165px;
+                    }
+
+
+                }
+
+                .git{
+
+                    position: absolute;
+                    left: 400px;
+                    top: 140px;
+                    order: 1;
+                    flex-basis: 20%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    @include mobile{
+
+                        min-height: 80px;
+                        min-width: 65px;
+                        left: 251px;
+                    }
+
                 }
             }
         }

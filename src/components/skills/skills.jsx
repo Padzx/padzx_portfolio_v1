@@ -4,6 +4,7 @@
 import React from "react";
 import './skills.scss'
 import SkillsFrontend from "./skills-stack/skillsFrontend";
+// import SkillsDevOps from "./skills-stack/skillsDevOps";
 
 const Skills = () => {
   return (
@@ -14,6 +15,7 @@ const Skills = () => {
             <hr />
             <div className="skillsContainer">
               <SkillsFrontend />
+              {/* <SkillsDevOps /> */}
             </div>
           </div>
         </div>
