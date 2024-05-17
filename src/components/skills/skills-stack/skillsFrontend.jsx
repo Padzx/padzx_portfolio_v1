@@ -1,6 +1,11 @@
+
+// --> Component Skills Frontend <--
+
 import React from "react";
 import { FaReact, FaHtml5, FaCss3   } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
+import { GrDocker } from "react-icons/gr";
+
 
 
 
@@ -11,6 +16,8 @@ const SkillsFrontend = () => {
             <div className="grid">< FaHtml5 className="tech-icons"/> </div>
             <div className="grid">< FaCss3 className="tech-icons"/></div>
             <div className="grid">< IoLogoJavascript className="tech-icons"/></div>
+            <div className="grid">< GrDocker className="tech-icons"/></div>
+            
         </div>
     );
 }
