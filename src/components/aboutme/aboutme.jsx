@@ -31,7 +31,6 @@ const Aboutme = () => {
                             pessoa analítica por natureza, sempre buscando compreender os dados de forma crítica e aprofundada. 
                             Acredito que essa abordagem minuciosa é fundamental para o desenvolvimento de aplicações eficazes e 
                             impactantes.
-
                             </p>
                         </div>
                     </Col>

@@ -13,24 +13,89 @@
     text-align: center;
     position: relative;
 
-    .wrapper{
-
+    .wrapper {
         display: flex;
 
+        .titleContainer {
+            hr {
+                width: 300px;
+                border: none;
+                left: 38%;
+                border-top: 0.5px solid rgb(134, 133, 133);
+                position: absolute;
 
-    .titleContainer{
+                @include mobile {
+                    width: 280px;
+                    left: 16%;
+                }
+            }
 
-        h2{
+            h2 {
+                font-size: 50px;
+                color: #9337df;
+                letter-spacing: 1px;
+            }
+        }
 
-            font-size: 50px;
-            color: #9337df;
-            letter-spacing: 1px;
+        .skillsContainer {
+            display: flex;
+            position: relative;
+
+            .skills-stack {
+                position: relative;
+                top: 30px;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                flex-wrap: wrap;
+                gap: 20px;
+
+                @include mobile {
+                    flex-wrap: nowrap;
+                    justify-content: center;
+                    gap: 10px;
+                    
+                }
+                
+
+                .grid {
+                    font-size: 2rem;
+                    border: 1.7px solid rgba(200, 137, 230, 0.637);
+                    box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137) !important;
+                    background-color: transparent;
+                    display: table;
+                    border-radius: 10px;
+                    flex: 1;
+                    min-width: 110px;
+                    min-height: 110px;
+                    padding: 20px;
+                    text-align: center;
+                    transition: background-color 0.3s ease, transform 0.3s ease;
+
+                    @include mobile {
+                        min-width: auto;
+                        flex: none;
+                        min-height: 80px;
+                        min-width: 65px;
+                        
+                    }
+
+                }
+
+                .grid:hover {
+                    background-color: #9437df36;
+                    transform: translateY(-10px);
+                }
+
+                .tech-icons {
+                    font-size: 4.5rem;
+                    color: #9337df;
+
+                    @include mobile{
+                        font-size: 2rem;
+                    }
+                }
+            }
         }
     }
-
-    }
-    
-
-
 }
-
