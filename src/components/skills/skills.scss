@@ -56,7 +56,7 @@
                 @include mobile {
                     flex-wrap: nowrap;
                     justify-content: center;
-                    gap: 10px;
+                    gap: 5px;
                 }
 
                 .grid {
@@ -129,7 +129,7 @@
 
                         min-height: 80px;
                         min-width: 65px;
-                        left: 83px;
+                        left: 80px;
                     }
 
 
@@ -146,17 +146,11 @@
                     justify-content: center;
                     align-items: center;
 
-                    @include mobile{
-
-                        min-height: 80px;
-                        min-width: 65px;
-                        left: 83px;
-                    }   
                         @include mobile{
 
                         min-height: 80px;
                         min-width: 65px;
-                        left: 165px;
+                        left: 159px;
                     }
 
 
@@ -177,8 +171,29 @@
 
                         min-height: 80px;
                         min-width: 65px;
-                        left: 251px;
+                        left: 237px;
                     }
+
+                }
+
+                .python{
+
+                    position: absolute;
+                    left: 535px;
+                    top: 140px;
+                    order: 1;
+                    flex-basis: 20%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    @include mobile{
+
+                        min-height: 80px;
+                        min-width: 65px;
+                        left: 315px;
+                    }
+
 
                 }
             }
