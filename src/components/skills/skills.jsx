@@ -3,8 +3,7 @@
 
 import React from "react";
 import './skills.scss'
-import SkillsFrontend from "./skills-stack/skillsFrontend";
-// import SkillsDevOps from "./skills-stack/skillsDevOps";
+import SkillsStack from "./skills-stack/skillsStack";
 
 const Skills = () => {
   return (
@@ -14,8 +13,7 @@ const Skills = () => {
             <h2>SkillsSet</h2>
             <hr />
             <div className="skillsContainer">
-              <SkillsFrontend />
-              {/* <SkillsDevOps /> */}
+              <SkillsStack />
             </div>
           </div>
         </div>

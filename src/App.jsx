@@ -10,20 +10,20 @@ import Skills from './components/skills/skills';
 export default function App() {
   return (
     <div>
-      <section>
+      <section id='Home'>
         <Navbar />
         <Hero />
       </section>
       <section>
         <Branding />
       </section>
-      <section>
+      <section id='Aboutme'>
         <Aboutme />
       </section>
-      <section>
+      <section id='Skills'>
         <Skills />
       </section>
-      <section>
+      <section id='Projects'>
         <Projects />
       </section>
     </div>

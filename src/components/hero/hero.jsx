@@ -1,6 +1,3 @@
-// ----> Component Hero <----
-
-
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { CiCircleChevDown } from "react-icons/ci";
@@ -13,18 +10,8 @@ const Hero = () => {
     const [currentSkillIndex, setCurrentSkillIndex] = useState(0);
 
     const textVariants = {
-        initial: {
-            x: -500,
-            opacity: 0,
-        },
-        animate: {
-            x: 0,
-            opacity: 1,
-            transition: {
-                duration: 1,
-                staggerChildren: 0.1
-            }
-        },
+        initial: { x: -500, opacity: 0 },
+        animate: { x: 0, opacity: 1, transition: { duration: 1, staggerChildren: 0.1 }},
     };
 
     useEffect(() => {
@@ -34,7 +21,6 @@ const Hero = () => {
             index++;
             if (index > targetText.length) clearInterval(interval); 
         }, 100); 
-
         return () => clearInterval(interval);
     }, [targetText]);
 
@@ -42,7 +28,6 @@ const Hero = () => {
         const interval = setInterval(() => {
             setCurrentSkillIndex((prevIndex) => (prevIndex + 1) % skills.length);
         }, 2500); 
-
         return () => clearInterval(interval);
     }, [skills.length]);
 
@@ -70,23 +55,18 @@ const Hero = () => {
                         transition={{ duration: 0.5 }} 
                         key={currentSkillIndex}
                     >
-                        {skills.map((skill, index) => (
-                            <motion.span
-                                key={index}
-                                style={{ display: index === currentSkillIndex ? 'inline' : 'none' }}
-                                initial={{ opacity: 0 }}
-                                animate={{ opacity: 1 }}
-                                exit={{ opacity: 0 }}
-                                transition={{ duration: 0.5 }} 
-                            >
-                                {skill}
-                                {index !== skills.length - 1 && ' '}
-                            </motion.span>
-                        ))}
+                        {skills[currentSkillIndex]}
                     </motion.h3>
                     <div className="buttons">
                         <button>View Resume</button>
-                        <button>Contact Me</button>
+                        <a 
+                            href="https://www.linkedin.com/in/gabriel-padilha-aa9083273/" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="button-link"
+                        >
+                            Contact Me
+                        </a>
                     </div>
                     <motion.div
                         className="down"

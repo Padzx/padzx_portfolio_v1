@@ -78,26 +78,31 @@
         }
 
         .buttons {
-            button {
+            display: flex;
+            gap: 20px; /* Ensure there is space between buttons */
+        
+            button, .button-link {
                 padding: 10px;
                 border: 1px solid rgb(134, 133, 133);
                 border-radius: 10px;
                 background-color: transparent;
                 color: rgb(134, 133, 133);
-                margin-right: 20px;
                 cursor: pointer;
                 transition: all 0.3s ease;
-
+                text-decoration: none;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+        
                 &:hover {
                     background-color: rgb(134, 133, 133);
                     transform: scale(1.05);
                     color: rgb(60, 60, 60);
                 }
-
+        
                 &:active {
                     transform: scale(0.95);
                 }
-                
             }
         }
     }
