@@ -8,11 +8,11 @@ import { SiKubernetes, SiGithubactions } from "react-icons/si";
 const SkillsFrontend = () => {
     return (
         <div className="skills-stack">
-            <div className="grid"><FaReact className="tech-icons" /></div>
-            <div className="grid"><FaHtml5 className="tech-icons" /></div>
-            <div className="grid"><FaCss3 className="tech-icons" /></div>
-            <div className="grid"><IoLogoJavascript className="tech-icons" /></div>
-            <div className="grid"><SiGithubactions className="tech-icons" /></div>
+            <div className="grid react"><FaReact className="tech-icons" /></div>
+            <div className="grid html"><FaHtml5 className="tech-icons" /></div>
+            <div className="grid css"><FaCss3 className="tech-icons" /></div>
+            <div className="grid js"><IoLogoJavascript className="tech-icons" /></div>
+            <div className="grid gitActions"><SiGithubactions className="tech-icons" /></div> 
             <div className="grid docker"><GrDocker className="tech-icons" /></div>
             <div className="grid k8s"><SiKubernetes className="tech-icons" /></div>
             <div className="grid aws"><FaAws className="tech-icons" /></div>

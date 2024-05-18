@@ -74,6 +74,7 @@
                     transition: background-color 0.3s ease, transform 0.3s ease;
 
                     @include mobile {
+                        
                         min-width: auto;
                         flex: none;
                         min-height: 80px;
@@ -95,21 +96,113 @@
                     }
                 }
 
-                    .docker {
-                    
+                .tech-icons:hover {
+                    color: #9437df;
+                }
+
+                    .react{
+
+                            position: absolute;
+                            left: -200px;
+                            top: 1px;
+                            display: flex;
+
+                            @include mobile{
+
+                                min-height: 80px;
+                                min-width: 65px;
+                                left: -90px;
+
+
+                            }
+
+                    }
+
+                    .css{
+
+                        position: absolute;
+                        left: 90px;
+                        top: 1px;
+                        display: flex;
+
+                        @include mobile{
+
+                            min-height: 80px;
+                            min-width: 65px;
+                            left: -7px;
+
+
+                        }
+
+                }
+
+                    .html{
+
+                        position: absolute;
+                        left: -55px;
+                        top: 1px;
+                        display: flex;
+
+                        @include mobile{
+
+                            min-height: 80px;
+                            min-width: 65px;
+                            left: 162px;
+
+
+                        }
+
+                }
+
+                .js{
+
                     position: absolute;
-                    left: 0px;
-                    top: 140px;
-                    order: 1;
-                    flex-basis: 20%;
+                    left: 235px;
+                    top: 1px;
                     display: flex;
-                    justify-content: center;
-                    align-items: center;
+
+                    @include mobile{
+
+                        min-height: 80px;
+                        min-width: 75px;
+                        left: 75px;
+
+
+                    }
+
+            }
+
+                .gitActions{
+
+                    position: absolute;
+                    left: 380px;
+                    top: 1px;
+                    display: flex;
 
                     @include mobile{
 
                         min-height: 80px;
                         min-width: 65px;
+                        left: 245px;
+
+
+                    }
+
+            }
+
+                    .docker {
+                    
+                    position: absolute;
+                    left: -200px;
+                    top: 140px;
+                    display: flex;
+
+
+                    @include mobile{
+
+                        min-height: 80px;
+                        min-width: 65px;
+                        left: 160px;
                     }
 
                 }
@@ -117,19 +210,16 @@
                 .k8s{
 
                     position: absolute;
-                    left: 135px;
+                    left: -55px;
                     top: 140px;
-                    order: 1;
-                    flex-basis: 20%;
                     display: flex;
-                    justify-content: center;
-                    align-items: center;
+
 
                     @include mobile{
 
                         min-height: 80px;
                         min-width: 65px;
-                        left: 80px;
+                        left: -90px;
                     }
 
 
@@ -138,19 +228,16 @@
                 .aws{
 
                     position: absolute;
-                    left: 270px;
+                    left: 90px;
                     top: 140px;
-                    order: 1;
-                    flex-basis: 20%;
                     display: flex;
-                    justify-content: center;
-                    align-items: center;
+
 
                         @include mobile{
 
                         min-height: 80px;
                         min-width: 65px;
-                        left: 159px;
+                        left: -7px;
                     }
 
 
@@ -159,19 +246,16 @@
                 .git{
 
                     position: absolute;
-                    left: 400px;
+                    left: 235px;
                     top: 140px;
-                    order: 1;
-                    flex-basis: 20%;
                     display: flex;
-                    justify-content: center;
-                    align-items: center;
+
 
                     @include mobile{
 
                         min-height: 80px;
                         min-width: 65px;
-                        left: 237px;
+                        left: 75px;
                     }
 
                 }
@@ -179,7 +263,7 @@
                 .python{
 
                     position: absolute;
-                    left: 535px;
+                    left: 380px;
                     top: 140px;
                     order: 1;
                     flex-basis: 20%;
@@ -191,7 +275,7 @@
 
                         min-height: 80px;
                         min-width: 65px;
-                        left: 315px;
+                        left: 245px;
                     }
 
 
