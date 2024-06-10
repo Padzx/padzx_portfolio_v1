@@ -20,6 +20,24 @@ const items = [
     desc: "O Dashboard Feminicídio traz dados reais da Secretária da Segurança Pública (SSP), com um dashboard interativo o Dashboard Feminicídio tras os mais variados tipos de dados para potencializar ainda mais as análises macro e micro (sendo morte por ano, mês, cor de pele e profissão), feito com dash e plotly, utilizamos também Pandas para manipulação de Data Frame",
     link: "https://github.com/Padzx/Projetc_Femicide"
   },
+
+  {
+    id: 3,
+    title: "ETL Workflow on AWS",
+    img: "image2.jpg",
+    desc: "Um projeto abrangente de fluxo de trabalho ETL que emprega AWS, Apache Airflow, Docker e Práticas CI/CD para demonstrar processamento de dados eficiente e automação de pipeline.",
+    link: "https://github.com/Padzx/comprehensive-etl-workflow/tree/main"
+  },
+
+  {
+    id: 4,
+    title: "Previsão de Diabetes com Machine Learning",
+    img: "image3.jpg",
+    desc: "Projeto com Machine Learning para prevenção de diabetes, um ambiente automatizado com pipeline de ingestão de dadosProjeto com Machine Learning para prevenção de diabetes, um ambiente automatizado com pipeline de ingestão de dados, utilizando Python, bibliotecas de machine learning e Pandas e MLflow para o gerenciamento dos treinamentos e modelos de machine learning.",
+    link: "https://github.com/Padzx/medical-treatment-personalization"
+  },
+
+
 ];
 
 const Project = ({ item }) => {

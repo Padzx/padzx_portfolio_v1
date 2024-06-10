@@ -58,7 +58,13 @@ const Hero = () => {
                         {skills[currentSkillIndex]}
                     </motion.h3>
                     <div className="buttons">
-                        <button>View Resume</button>
+                        <a 
+                            href="/CV_GABRIEL_1.pdf" 
+                            download 
+                            className="button-link"
+                        >
+                            View Resume
+                        </a>
                         <a 
                             href="https://www.linkedin.com/in/gabriel-padilha-aa9083273/" 
                             target="_blank" 
